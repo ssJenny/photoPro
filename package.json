@@ -1,0 +1,28 @@
+{
+  "name": "photopro",
+  "version": "1.0.0",
+  "description": "a nodejs project",
+  "main": "main.js",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "formidable": "^1.1.1",
+    "silly-datetime": "^0.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssJenny/photoPro.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "ciyel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssJenny/photoPro/issues"
+  },
+  "homepage": "https://github.com/ssJenny/photoPro#readme"
+}

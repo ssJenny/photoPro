@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>我的相册</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <% if(fileName.length){
+                 for (var i = 0; i < fileName.length; i++ ){%>
+                    <li onclick="showphoto(this)">
+                        <img src="fm.jpg" alt="">
+                        <%= fileName[i] %>
+                    </li>
+                <% }
+            } else {
+                for (var i = 0; i < imgSrc.length; i++ ){ %>
+                    <li>
+                        <img src=<%= imgSrc[i] %> alt="">
+                    </li>
+            <% }%>
+        </ul>
+    </div>
+</body>
+
+<script>
+    String.prototype.trim = function () {
+        return this.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+    function showphoto(that) {
+        window.location = "/" + that.textContent.trim();
+    }
+</script>
+</html>
