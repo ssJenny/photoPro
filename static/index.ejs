@@ -4,6 +4,33 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="index.css">
     <title>我的相册</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        div{
+            max-width: 83%;
+            height: auto;
+            border: 1px solid #ccc;
+            box-shadow: #ccc 5px 5px 5px ;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        li{
+            width: 200px;
+            height: 200px;
+            margin: 50px 30px;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -11,7 +38,7 @@
             <% if(fileName.length){
                  for (var i = 0; i < fileName.length; i++ ){%>
                     <li onclick="showphoto(this)">
-                        <img src="fm.jpg" alt="">
+                        <img src="fm.png" alt="">
                         <%= fileName[i] %>
                     </li>
                 <% }
